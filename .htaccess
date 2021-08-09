@@ -1,0 +1,3 @@
+RewriteEngine ON
+RewriteRule ^([a-z]+)$ ?controller=$1
+RewriteRule ^([a-z]+)/([a-z\-]+)$ ?controller=$1&action=$2
