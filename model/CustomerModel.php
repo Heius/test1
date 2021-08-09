@@ -12,7 +12,7 @@ class CustomerModel extends DatabaseModel
     public function readAllData()
     {
         $con = $this->connect();
-        $sql = "SELECT * FROM customer";
+        $sql = "SELECT * FROM customers";
         $result = mysqli_query($con, $sql);
         $this->close($con);
         $customerArray = [];
